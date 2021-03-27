@@ -28,18 +28,42 @@ html {
 }
 
 .container {
+    /* contendor de la pagina */
     display: flex;
     background-color: var(--Dark-cyan);
     min-width: 375px;
-    width: 768px;
+    width: 100%;
     height: 100%;
 }
 
 .cardbody {
+    /* contendedor de la tarjeta */
     width: 340px;
     max-width: 768px;
     height: 350px;
     max-height: 1024px;
     background-color: white;
     border-radius: 5%;
+    margin: 40% auto;
+    box-shadow: 3px 3px 1px rgba(89, 73, 30, 0.16);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.cardbody_imagen {
+    min-width: 340px;
+    min-height: 140px;
+    background-image: url("./images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cardbody_perfil img {
+    position: relative;
+    border-radius: 50%;
+    border: 5px solid white;
+    bottom: 50px;
 }
