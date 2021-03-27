@@ -1,0 +1,45 @@
+/*
+1.pocicionamiento
+2.modelo de caja
+3.tipografia
+4.visuales
+5.misalaneos o otros.
+*/
+
+:root {
+    /*colors of proyect*/
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    /*ajuste del DOM HTML */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /*uso de rem y tipo de fuente del DOM*/
+    font-size: 62.5%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    background-color: var(--Dark-cyan);
+    min-width: 375px;
+    width: 768px;
+    height: 100%;
+}
+
+.cardbody {
+    width: 340px;
+    max-width: 768px;
+    height: 350px;
+    max-height: 1024px;
+    background-color: white;
+    border-radius: 5%;
+}
