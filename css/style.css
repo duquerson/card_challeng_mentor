@@ -38,6 +38,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container_cardbody {
@@ -114,4 +115,8 @@ html {
     color: var(--Dark-gray);
     font-size: 1.1rem;
     letter-spacing: 1.5px;
+}
+
+.autor_frontendmentor {
+    margin-top: 12px;
 }
