@@ -29,104 +29,89 @@ html {
 
 .container {
     /* contendor de la pagina */
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 44vw bottom 41vh, left 44vw top 41vh;
     background-color: var(--Dark-cyan);
-    width: 100%;
-    height: 750px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.cardbody {
+.container_cardbody {
     /* contendedor de la tarjeta */
-    width: 329px;
-    height: 380px;
+    width: 328px;
+    height: 376px;
     overflow: hidden;
     background-color: white;
-    border-radius: 5%;
-    box-shadow: 3px 3px 1px rgba(89, 73, 30, 0.16);
-    position: absolute;
+    border-radius: 6%;
+    box-shadow: 6px 6px 2px rgba(89, 73, 30, 0.16);
+    position: relative;
 }
 
-.cardbody_imagenlogo {
-    /* modificaciones al fondo logo */
-    width: 329 px;
-    height: 140px;
-}
-
-.cardbody_perfil {
+.cardbody_text {
     /* modificaciones al contenido central de la tarjeta */
-    width: 329 px;
-    height: 144 px;
+    text-align: center;
+    font-size: 1.8rem;
     border-bottom: 1px solid rgba(89, 73, 30, 0.16);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
-.cardbody_perfil img {
+.cardbody_text img {
     /* modificaciones a la imagen */
-    position: relative;
     border: 4.8px solid white;
-    border-radius: 48%;
-    bottom: 55px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    right: 32.8%;
+    top: 23%;
 }
 
-.cardbody_perfil h1 {
-    /* modificaciones al texto parte 1 */
-    position: relative;
-    font-size: 18px;
+.cardbody_text h1 {
+    /* modificaciones al texto parte 1  del bodycard*/
+    margin-top: 70px;
     font-weight: 700;
-    bottom: 35px;
+    color: var(--Very-dark-blue);
+    margin-bottom: 20px;
 }
 
-.cardbody_perfil span {
-    /* modificaciones al texto parte 2 */
+.cardbody_text span {
+    /* modificaciones al texto parte 2 del bodycard*/
     color: var(--Dark-grayish-blue);
     font-weight: 400;
-    margin-left: 9px;
+    margin-left: 8px;
 }
 
-.cardbody_perfil p {
-    /* modificaciones al texto parte 3 */
-    position: relative;
-    font-size: 14px;
+.cardbody_text h2 {
+    /* modificaciones al texto parte 3 del bodycard*/
+    font-size: 1.7rem;
     font-weight: 400;
-    bottom: 20px;
     color: var(--Dark-gray);
+    margin-bottom: 30px;
 }
 
 .cardbody_footer {
-    /* modificaciones al pie de pagina */
-    width: 329px;
-    height: 101px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* moficiaciones al footer */
     text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.8rem;
+    margin-top: 13px;
+    height: auto;
 }
 
-.cardbody_footer--followers {
-    height: 100px;
-    width: 110px;
+.cardbody_footer--text h3 {
+    /* modificaciones al texto del footer parte 1 */
+    margin-bottom: 8px;
 }
 
-.cardbody_footer--followers h2 {
-    /* modificaciones al texto seguidores */
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.cardbody_footer--followers p {
-    margin-top: 9px;
+.cardbody_footer--text h4 {
+    /* modificaciones al texto del footer parte 2 */
     font-weight: 400;
-    font-size: 12px;
-    color: var(--Dark-grayish-blue);
-}
-
-.cardbody_footer--like h2 {
-    font-size: 18px;
-    font-weight: 700;
-    margin: 0 auto;
+    color: var(--Dark-gray);
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
 }
