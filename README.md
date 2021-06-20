@@ -1,6 +1,13 @@
 <h1 align="center">Hi 👋, I'm Yeferson_Soto from Venezuela</h1>
 <h3 align="center">Profile card component from Frontend Mentor challenge complete</h3>
 
+<a href="https://duquerson.github.io/card_challeng_mentor/" target="blank">preview project</a>
+
+<img src="https://res.cloudinary.com/dz209s6jk/image/upload/v1605203462/Challenges/udlaqeyuqehspxb2zi9h.jpg" alt="imagen del proyecto"/>
+
+<p>**only flexbox**</p>
+
+
 - 🌱 I’m currently learning **platzi courses**
 
 
